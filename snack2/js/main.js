@@ -37,7 +37,7 @@ let teams = [
 // punti fatti:
 let randomPuntiFatti = Math.floor(Math.random() * 100) + 1;
 
-for (i = 0; i < teams.length; i++) {
+for (let i = 0; i < teams.length; i++) {
     teams[i].puntiFatti = randomPuntiFatti
 };
 
@@ -45,7 +45,7 @@ for (i = 0; i < teams.length; i++) {
 // falli subiti:    
 let randomFalliSubiti = Math.floor(Math.random() * 100) + 1;
 
-for (i = 0; i < teams.length; i++) {
+for (let i = 0; i < teams.length; i++) {
     teams[i].falliSubiti = randomFalliSubiti;
 }
 
@@ -55,14 +55,11 @@ console.log(teams);
 // usando la destrutturazione creiamo un nuovo array 
 let [teamOne, teamTwo, teamThree, teamFour, teamFive] = teams;
 
-// i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
-console.log(
-    "Nome squadra: " + teamOne.nome + " / " + "Falli subiti: " + teamOne.falliSubiti,
-    "Nome squadra: " + teamTwo.nome + " / " + "Falli subiti: " + teamTwo.falliSubiti,
-    "Nome squadra: " + teamThree.nome + " / " + "Falli subiti: " + teamThree.falliSubiti,
-    "Nome squadra: " + teamFour.nome + " / " + "Falli subiti: " + teamFour.falliSubiti,
-    "Nome squadra: " + teamFive.nome + " / " + "Falli subiti: " + teamFive.falliSubiti
-);
+// // i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
+
+for (let i = 0; i < teams.length; i++) {
+    console.log("Nome squadra: " + teams[i].nome + " / " + "Falli subiti: " + teams[i].falliSubiti)
+}
 
 
 
