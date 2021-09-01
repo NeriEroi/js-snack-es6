@@ -18,23 +18,23 @@ const arrayBici = [
 
 // Stampare a schermo la bici con peso minore.
 
-// let biciLeggera = arrayBici[0];
+let biciLeggera = arrayBici[0];
 
-// for (let i = 0; i < arrayBici.length; i++) {
-//     // console.log(arrayBici[i]);
+for (let i = 0; i < arrayBici.length; i++) {
+    // console.log(arrayBici[i]);
 
-//     if (arrayBici[i].peso < biciLeggera.peso) {
-//         biciLeggera = arrayBici[i];
-//     }
+    if (arrayBici[i].peso < biciLeggera.peso) {
+        biciLeggera = arrayBici[i];
+    }
     
-// }
+}
 
-// console.log(biciLeggera);
+console.log(biciLeggera);
 
 
 
 // stampa bici peso minore 
-const {peso} = arrayBici[2];
+const {peso} = biciLeggera;
 // con destructuring
 console.log("la bici più leggera pesa " + peso + " kg");
 // con template literal
